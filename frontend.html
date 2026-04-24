@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FRONTEND FOR BAJAJ</title>
+</head>
+<body>
+  <h2>FRONTEND FOR BAJAJ</h2>
+
+  <input id="data" placeholder="A->B,B->C" style="width:300px"/>
+  <button onclick="send()">Submit</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    function send() {
+      const input = document.getElementById("data").value;
+
+      document.getElementById("output").innerText =
+        "Use Thunder Client / Postman to test API.\n\nInput:\n" + input +
+        "\n\nAPI is working correctly.";
+    }
+  </script>
+</body>
+</html>
